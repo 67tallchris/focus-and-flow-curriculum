@@ -1,0 +1,14 @@
+name = "focus-and-flow-coaching"
+main = "functions/[[path]].js"
+compatibility_date = "2024-01-01"
+assets = { directory = "public", binding = "ASSETS" }
+
+# D1 Database binding
+[[d1_databases]]
+binding = "COACHING_DB"
+database_name = "coaching-db"
+database_id = "7ff0c4db-d090-4b13-863d-0ffae2ed6eef"
+
+# Environment variables
+[vars]
+JWT_SECRET = "focus-and-flow-secret-key-2024"

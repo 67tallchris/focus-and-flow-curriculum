@@ -1,0 +1,19 @@
+{
+  "name": "focus-and-flow-coaching",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --d1 COACHING_DB --persist",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create coaching-db",
+    "db:migrate": "wrangler d1 migrations apply coaching-db --local",
+    "db:migrate:prod": "wrangler d1 migrations apply coaching-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "jose": "^5.0.0"
+  }
+}
